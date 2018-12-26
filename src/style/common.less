@@ -1,0 +1,40 @@
+ul, li {
+  list-style: none;
+}
+
+.clearfix {
+  &:after {
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: hidden;
+  }
+}
+
+.container {
+  .nav-left {
+    //min-width: 180px;
+    background-color: #001529;
+    color: #fff;
+    height: calc(100vh);
+  }
+  .main {
+    height: calc(100vh);
+    background-color: #f1f3f5;
+    overflow: auto;
+  }
+  .content {
+    position: relative;
+    padding: 20px;
+  }
+}
+
+.content-wrap {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  margin-top: -3px;
+  .ant-table-wrapper {
+    margin-left: -1px;
+    margin-right: -2px;
+  }
+}
